@@ -1,23 +1,26 @@
 # ApplicationAlphaPlugin
-apk内测发布插件
+# apk内测发布插件
+# 一键打包加固上传到蒲公英
+## 第一步：在根目录build.gradle添加
 
-一键打包加固上传到蒲公英
+```
 
-第一步：在根目录build.gradle添加
-buildscript {
-    repositories {
-       
-        maven {url "https://jitpack.io"}
+    buildscript {
+    
+        repositories {
+            maven {url "https://jitpack.io"}
+        }
+
+        dependencies {
+            classpath 'com.github.lgGuo:ApplicationAlphaPlugin:1.0.2'
+        }
+
+
     }
-    dependencies {
-       
-        classpath 'com.github.lgGuo:ApplicationAlphaPlugin:1.0.2'
-    }
 
+```
 
-}
-
-第一步：app的build.gradle添加
+第2步：app的build.gradle添加
 
 apply plugin: 'alpha'
 
