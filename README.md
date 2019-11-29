@@ -20,19 +20,20 @@
 
 ```
 
-第2步：app的build.gradle添加
+# 第2步：app的build.gradle添加
 
-apply plugin: 'alpha'
+## apply plugin: 'alpha'
 
-publishApk{
-    pgyApiKey = "蒲公英apikey"
-    reinforce_username = "360加固登录用户名" //用户名 必填
-    reinforce_password = "360加固登录密码"//密码 必填
-    storeFile =  //签名文件路径
-    storePassword = //签名密码 
-    keyAlias = "tyche" //签名文件别名 
-    keyPassword = //签名文件别名密码 
+```
+    publishApk{
+        pgyApiKey = "蒲公英apikey"
+        reinforce_username = "360加固登录用户名" //用户名 必填
+        reinforce_password = "360加固登录密码"//密码 必填
+        storeFile =  //签名文件路径
+        storePassword = //签名密码 
+        keyAlias = "tyche" //签名文件别名 
+        keyPassword = //签名文件别名密码 
 
-
-}
+    }
+```
 
