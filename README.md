@@ -22,9 +22,9 @@
 
 # 第2步：app的build.gradle添加
 
-## apply plugin: 'alpha'
-
 ```
+    apply plugin: 'alpha'
+
     publishApk{
         pgyApiKey = "蒲公英apikey"
         reinforce_username = "360加固登录用户名" //用户名 必填
