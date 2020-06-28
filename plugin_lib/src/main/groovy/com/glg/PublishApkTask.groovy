@@ -20,6 +20,8 @@ class PublishApkTask extends DefaultTask {
     void setApkOutputName(String apkOutputName) {
         this.apkOutputName = apkOutputName
     }
+
+
 /**
  * 上传文件到蒲公英
  * @param apkPath apk本地路径

@@ -5,7 +5,6 @@ import org.gradle.api.Project
 
 class AppAlphaPlugin implements Plugin<Project>{
 
-
     static final String EXTENSION_NAME = 'publishApk'
 
     @Override
