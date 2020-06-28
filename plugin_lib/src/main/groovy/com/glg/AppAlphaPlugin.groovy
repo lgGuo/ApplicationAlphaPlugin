@@ -21,7 +21,7 @@ class AppAlphaPlugin implements Plugin<Project>{
                     def outputName = project.getRootProject().getName() + "_v${flag}${variant.name}.apk"
                     variant.outputs.all {
                         output ->
-                            project.getRootProject().getName() + "_v${flag}${variant.name}.apk"
+                            outputFileName=outputName
                     }
 
                     variant.getPackageApplication().outputDirectory = new File(outputPath)
