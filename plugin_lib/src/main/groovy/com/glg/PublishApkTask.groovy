@@ -37,12 +37,18 @@ class PublishApkTask extends DefaultTask {
 
         def fileDir = new File(apkDir)
         def apkFile
-        for (File f:fileDir.listFiles()){
-            if (f.getName().contains("jiagu")){
-                apkFile=f
-                break
-            }
+        if(publishExtension.openReinforce){
+            for (File f:fileDir.listFiles()){
+                if (f.getName().contains("jiagu")){
+                    apkFile=f
+                    break
+                }
         }
+        }else{
+
+            apkFile=fileDir
+        }
+        
 
         def stdout = new ByteArrayOutputStream()
         try {
